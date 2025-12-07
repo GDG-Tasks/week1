@@ -1,10 +1,16 @@
-import "dart:io";
-
 void main(){
-  for(int i = 5; i >= 1; i--){
-    for(int j = 1; j <= i; j++){
-      stdout.write('*');
-    }
-    print("");
+  int x = 15;
+
+  if(x % 3 == 0 && x % 5 == 0){
+    print("FizzBuzz");
+  }
+  else if(x % 3 == 0){
+    print("Fizz");
+  }
+  else if(x % 5 == 0){
+    print("Buzz");
+  }
+  else{
+    print("Not divisible");
   }
 }
